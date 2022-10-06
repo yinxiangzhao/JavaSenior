@@ -1,4 +1,4 @@
-package com.bcfx.java2;
+package com.bcfx.functionInterface;
 
 import java.util.ArrayList;
 import java.util.List;

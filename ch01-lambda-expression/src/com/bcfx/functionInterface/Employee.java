@@ -1,4 +1,6 @@
-package com.bcfx.java2;
+package com.bcfx.functionInterface;
+
+import java.util.Objects;
 
 /**
  * @author yinxz
@@ -79,16 +81,6 @@ public class Employee {
     }
 
     @Override
-    public int hashCode() {
-        return super.hashCode();
-    }
-
-    @Override
-    public boolean equals(Object obj) {
-        return super.equals(obj);
-    }
-
-    @Override
     protected Object clone() throws CloneNotSupportedException {
         return super.clone();
     }
@@ -96,5 +88,22 @@ public class Employee {
     @Override
     protected void finalize() throws Throwable {
         super.finalize();
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) {
+            return true;
+        }
+        if (o == null || getClass() != o.getClass()) {
+            return false;
+        }
+        Employee employee = (Employee) o;
+        return id == employee.id && age == employee.age && Double.compare(employee.salary, salary) == 0 && Objects.equals(name, employee.name);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id, name, age, salary);
     }
 }

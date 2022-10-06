@@ -1,4 +1,4 @@
-package com.bcfx.java1;
+package com.bcfx.lambda;
 
 import org.junit.Test;
 

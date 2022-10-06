@@ -1,4 +1,4 @@
-package com.bcfx.java2;
+package com.bcfx.functionInterface;
 
 import org.junit.Test;
 

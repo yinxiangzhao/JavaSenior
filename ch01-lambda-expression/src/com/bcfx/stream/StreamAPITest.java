@@ -1,7 +1,7 @@
-package com.bcfx.java3;
+package com.bcfx.stream;
 
-import com.bcfx.java2.Employee;
-import com.bcfx.java2.EmployeeData;
+import com.bcfx.functionInterface.Employee;
+import com.bcfx.functionInterface.EmployeeData;
 import org.junit.Test;
 
 import java.util.Arrays;
