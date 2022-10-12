@@ -14,10 +14,10 @@ import java.util.function.Predicate;
  * @Description
  *
  *  java内置的4大核心函数接口
- *  消费型
- *  供给型
- *  函数型
- *  断定型
+ *  消费型  Consumer中的 void accept(T t)
+ *  供给型  Supplier中的 T get()
+ *  函数型  Function 中的 R apply(T t)
+ *  断定型  Predicate 中的 boolean test(T t)
  */
 public class LambdaTest2 {
 
